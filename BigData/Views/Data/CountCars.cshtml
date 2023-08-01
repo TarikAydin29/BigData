@@ -1,0 +1,33 @@
+﻿@model BigData.Models.NewCars
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>CountCars</title>
+</head>
+<body>
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.CarCount)
+            </th>
+                <th>
+                    @Html.DisplayFor(model => model.CarCount)
+                </th>
+            <th></th>
+        </tr>
+    </thead>
+   
+</table>
+</body>
+</html>

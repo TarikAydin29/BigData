@@ -1,0 +1,16 @@
+﻿@model List< Plate>
+
+
+@foreach (var item in Model)
+{
+    <tr>
+        <td>@item.PLATE</td>
+        <td>
+            <h6>@item.BRAND</h6>
+            <p class="text-muted m-b-0">@item.MODEL</p>
+        </td>
+        <td>@item.YEAR_</td>
+        <td>@item.FUEL</td>
+    </tr>
+}
+

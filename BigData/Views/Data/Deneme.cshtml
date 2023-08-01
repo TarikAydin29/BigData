@@ -1,0 +1,131 @@
+﻿@model IEnumerable<BigData.Models.Plate>
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Deneme</title>
+</head>
+<body>
+    <div>
+        <form method="post">
+            <input class="form-control m-3" type="text" name="Brand" placeholder="Marka Girin" />
+            <button class="btn btn-outline-warning mx-3">Ara</button>
+        </form>
+    </div>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.ID)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.CARID)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.PLATE)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.LICENCEDATE)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.CITYNR)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.TITLE)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.BRAND)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.MODEL)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.YEAR_)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.FUEL)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.SHIFTTYPE)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.MOTORVOLUME)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.MOTORPOWER)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.COLOR)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.CASETYPE)
+                </th>
+
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.ID)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.CARID)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.PLATE)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.LICENCEDATE)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.CITYNR)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.TITLE)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.BRAND)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.MODEL)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.YEAR_)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.FUEL)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.SHIFTTYPE)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.MOTORVOLUME)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.MOTORPOWER)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.COLOR)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.CASETYPE)
+                    </td>
+
+                </tr>
+            }
+        </tbody>
+    </table>
+</body>
+</html>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
